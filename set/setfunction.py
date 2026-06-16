@@ -59,3 +59,8 @@ myset.difference(myset_1)
 print(myset.difference(myset_1))
 print(myset - myset_1)
 # output:{'shyam', 'ram'}
+# ======symmetric difference===
+myset={1,55.5,"ram","shyam"}
+myset1={1,55.5,"orrange","apple"}
+print(myset.symmetric_difference(myset1))#(AuB)-(A∩B)
+# output:{'apple', 'orrange', 'shyam', 'ram'}

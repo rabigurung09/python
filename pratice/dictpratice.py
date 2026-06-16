@@ -64,3 +64,145 @@ dit={
 dit.clear()
 print(dit)
 # output:{}
+"""9.	Create a dictionary using fromkeys() with keys:"""
+de={
+    "name":"rabi",
+    "class":"bachlor",
+    "age":3
+    
+}
+key=["name","class","age"]
+det=de.fromkeys(key,0)
+print(det)
+"""10.	Use setdefault() to add a faculty key if it does not exist
+"""
+dt={
+    "name":"resham",
+    "class":"bachlor",
+    "roll":1
+}
+df=dt.setdefault("email","rabi23@gmail.com")
+print(dt)
+# output:{'name': 'resham', 'class': 'bachlor', 'roll': 1, 'email': 'rabi23@gmail.com'}
+"""11.	Add a new student to a nested dictionary."""
+dp={
+    "oldstudent":{
+        "name":"ram",
+        "age":12
+    },
+    
+}
+dp["newstudent"]={
+    "name":"shyam",
+    "age":21
+    
+}
+print(dp)
+# output:{'oldstudent': {'name': 'ram', 'age': 12}, 'newstudent': {'name': 'shyam', 'age': 21}}
+"""12.	Update Hari's age from 21 to 22."""
+name={
+    "firstname":"hari",
+    "age":21
+}
+name["age"]=23
+print(name)
+# output:{'firstname': 'hari', 'age': 23}
+"""13.	Remove student s1 from the nested dictionary."""
+dp={
+    "oldstudent":{
+        "name":"ram",
+        "age":12
+    },
+    
+}
+dp["newstudent"]={
+    "name":"shyam",
+    "age":21
+    
+}
+print(dp)
+txt=dp.popitem()
+print(dp)
+# output:{'oldstudent': {'name': 'ram', 'age': 12}}
+"""14.	Add GPA to student s1."""
+dp={
+    "oldstudent":{
+        "name":"ram",
+        "age":12
+    },
+    
+}
+dp["newstudent"]={
+    "name":"shyam",
+    "age":21
+    
+}
+print(dp)
+txt=dp.popitem()
+print(dp)
+te=dp.get("oldstudent")["gpa"]=4
+print(dp)
+# output:{'oldstudent': {'name': 'ram', 'age': 12, 'gpa': 4}}
+"""15.	Display only the age of student s2."""
+dp={
+    "oldstudent":{
+        "name":"ram",
+        "age":12
+    },
+    
+}
+dp["newstudent"]={
+    "name":"shyam",
+    "age":21
+    
+}
+print(dp)
+txt=dp.get("oldstudent")["age"]
+print(txt)
+# output:12
+"""16.	Replace Ram's name with Shyam."""
+
+dp={
+    "oldstudent":{
+        "name":"ram",
+        "age":12
+    },
+    
+}
+dp["newstudent"]={
+    "name":"shyam",
+    "age":21
+    
+}
+print(dp)
+txt=dp.popitem()
+print(dp)
+te=dp.get("oldstudent")["gpa"]=4
+print(dp)
+tr=dp.get("oldstudent")["name"]="shyam"
+print(dp)
+# output:{'oldstudent': {'name': 'shyam', 'age': 12, 'gpa': 4}}
+"""17.	Add a new subject key inside student s1."""
+
+dp={
+    "oldstudent":{
+        "name":"ram",
+        "age":12
+    },
+    
+}
+dp["newstudent"]={
+    "name":"shyam",
+    "age":21
+    
+}
+print(dp)
+txt=dp.popitem()
+print(dp)
+te=dp.get("oldstudent")["gpa"]=4
+print(dp)
+tr=dp.get("oldstudent")["name"]="shyam"
+print(dp)
+dp.get("oldstudent")["number"]=984366286
+print(dp)
+# output:{'oldstudent': {'name': 'shyam', 'age': 12, 'gpa': 4, 'number': 984366286}}
