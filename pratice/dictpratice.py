@@ -206,3 +206,50 @@ print(dp)
 dp.get("oldstudent")["number"]=984366286
 print(dp)
 # output:{'oldstudent': {'name': 'shyam', 'age': 12, 'gpa': 4, 'number': 984366286}}
+"""18.	Create an employee dictionary and:
+Add salary 
+Update salary 
+Remove department"""
+employee={
+    "name":"ram",
+    "department":"front",
+    "id":1
+}
+employee["salary"]=10000
+print(employee)
+employee["salary"]=20000
+print(employee)
+del employee["department"]
+print(employee)
+"""19. Create a product dictionary and:
+•	Add stock 
+•	Update price 
+•	Delete category"""
+product={
+    "name":"laptop",
+    "price":64000,
+    "category":"super"
+    
+}
+product["stock"]=1000
+print("after adding stock",product)
+product["price"]=750000
+print("after update ",product)
+del product["category"]
+print("after deleteing category",product)
+"""20. Create a library dictionary and:
+•	Add author 
+•	Update book title 
+•	Remove publication year
+"""
+library={
+    "book_title":"the end",
+    "publication_year":1987
+    
+}
+library["author"]="thomas arlya"
+print("after adding author",library)
+library["book_title"]="robit thega"
+print("after updating author",library)
+del library["publication_year"]
+print("after deleting publication year",library)
