@@ -156,6 +156,24 @@ for attempt in range(1,4):
         print("login unsucessful")
         if attempt==3:
             print("account locked")
+            
+            
+            
+# ===another=====
+user_name="admin"
+password="rabu@133"
+for attempt in range(1,4):
+    user=input("enter your user name: ")
+    pas=input("enter your password: ")
+    if user == user_name and pas ==password:
+        print("login sucessfull")
+        break
+    else:
+        print("invalid user_name or password")
+        print("attemt left", 3 - attempt)
+    if attempt == 3:
+        print("incorrect user_name or  password")
+        print("account_locked")
     
        
   
@@ -171,8 +189,9 @@ for attempt in range(1,4):
 # user_2=int(input("enter your number: "))
 # user_3=int(input("enter your number: "))
 # if user_1 > user_2 and user_3:
-   
-    
+
+
+
     
     
     
