@@ -41,7 +41,10 @@ def area(L,b):
 area(10,50)
 # output: 500
 
-
-
+# area of square 
+def area(l,b):
+    print(l*l)
+area(8,8)
+# output:64
 
 

@@ -1,0 +1,79 @@
+"""
+1. Write a function to find the cube of a number.
+2. Write a function to check whether a number is even or odd.
+3. Write a function to find the largest of two numbers.
+4. Write a function to deposit money into a bank account.
+5. Write a function to withdrawn money into a bank account.   
+6. if the per unit price of electricity bill is 12 then calculate the total price of 56 unit.
+7. Write a Python program using three user-defined functions to:
+    Deposit money
+    Withdraw money
+    Display the current balance
+    
+    """
+
+
+# 1. Write a function to find the cube of a number.
+def cube(num):
+    return num**3
+print(cube(4))
+# output=64
+
+# 2. Write a function to check whether a number is even or odd.
+def num(a):
+    if a%2 == 0:
+        return "even"
+    else:
+        return "odd"
+print(num(4))
+# output=even
+
+
+# 3. Write a function to find the largest of two numbers.
+def num_1(a, v):
+    if a > v:
+        return "a is largest"
+    else:
+        return "v is largest"
+print(num_1(23,45))
+# output= v is largest
+
+
+# 4. Write a function to deposit money into a bank account.
+def depo(balance,deposite):
+    balance += deposite
+    return balance
+balance=10000
+balance = depo(10000,int(input("enter your balance: ")))
+print(balance)
+
+
+# 5. Write a function to withdrawn money into a bank account. 
+def dre(balance,withdraw_amount):
+    balance -= withdraw_amount
+    return balance
+balance=300000
+balance = dre(300000,int(input("enter withdraw amount")))
+print(balance)
+
+
+# 6. if the per unit price of electricity bill is 12 then calculate the total price of 56 unit.
+def calv(a,b):
+    print(a*b)
+calv(12,56)
+
+# 7. Write a Python program using three user-defined functions to:
+#     Deposit money
+#     Withdraw money
+#     Display the current balance
+current_balance = 30000
+def depi(current_balance,depo_amt):
+    current_balance += depo_amt
+    return current_balance
+current_balance= depi(30000,int(input("depo_amount: ")))
+print(current_balance)
+def dre(current_balance,width_amt):
+    current_balance -= width_amt
+    return current_balance
+current_balance = dre (current_balance,int(input("width draw amt: ")))
+print(current_balance)
