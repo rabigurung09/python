@@ -16,7 +16,7 @@ this expression is execute (runs) and return result
 
 """
 # explain 
-result = lambda a,b:a+b
+result = lambda a,b,c:a+b+c
 print(result(2,4))
 # output=6
 
